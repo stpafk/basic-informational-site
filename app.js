@@ -8,7 +8,7 @@ http
     if (req.url === "/") {
       filename = "." + "/index.html";
     } else {
-      filename = "." + req.url;
+      filename = "." + req.url + ".html";
     }
 
     fs.readFile(filename, function (err, data) {
